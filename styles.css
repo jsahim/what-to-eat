@@ -126,11 +126,11 @@ body{
     padding-left: 30px;
 }
 
-.lets-cook-container {
+.lets-eat-container {
     padding: 30px 0px 0px 40px;
 }
 
-#lets-cook-button {
+#lets-eat-button {
     font-size: 16px;
     font-weight: bold;
     background-color:#A63E21;
@@ -141,7 +141,7 @@ body{
     transition-duration: 0.2s;
 }
 
-#lets-cook-button:hover {
+#lets-eat-button:hover {
     background-color: #e1b72e;
     border-color: white;
     color: white;

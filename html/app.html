@@ -3,34 +3,35 @@
   <head>
     <link rel="stylesheet" href="./styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>What To Eat?</title>
   </head>
   <body>
     <section class ="top-nav">
       <div class="site-title-container">
-        <p id="site-title">What's for Dinner?</p>
+        <p id="site-title">What To Eat?</p>
       </div>
       <div class="add-recipe-container">
-        <button id="add-recipe-button">ADD A RECIPE</button>
+        <button id="add-recipe-button">ADD A CUISINE</button>
       </div>
     </section>
     <section class="welcome-container">
         <div class="welcome-banner">
-            <p id="welcome-statement">&nbsp;Hey <b id="welcome-name">name</b>, let's get cookin'!&nbsp;</p>
+            <p id="welcome-statement">&nbsp;Hey <b id="welcome-name">name</b>, let's get some grub!&nbsp;</p>
         </div>
     </section>
     <section class="wrapper">
       <section class="box" id="left-box">
         <p id="start-title">What are you looking for?<span style="color: red">*</span></p>
         <div class="radio-buttons">
-          <input type="radio" id="side-radio" name="food_buttons" value="Side">
-          <label for="side-radio">Side</label><br>
+          <input type="radio" id="drink-radio" name="food_buttons" value="Drinks">
+          <label for="drink-radio">Drinks</label><br>
           <input type="radio" id="main-radio" name="food_buttons" value="Main">
           <label for="main-radio">Main Dish</label><br>
           <input type="radio" id="dessert-radio" name="food_buttons" value="Dessert">
           <label for="dessert-radio">Dessert</label><br>
         </div>
-        <div class="lets-cook-container">
-          <button id="lets-cook-button">LET'S COOK!</button>
+        <div class="lets-eat-container">
+          <button id="lets-eat-button">LET'S EAT!</button>
         </div>
       </section>
       <section class="box" id="right-box">
@@ -40,8 +41,8 @@
           </svg>
         </div>
         <div class="output-container hidden">
-            <p id="output-intro"><em>You should make:</em></p>
-            <p id="output-name">recipe</p>
+            <p id="output-intro"><em>You should eat:</em></p>
+            <p id="output-name">food</p>
         </div>
       </section>
     </section>

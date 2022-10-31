@@ -49,14 +49,14 @@ var desserts = [
 ];
 
 
-var sidesIndexNum = getRandomIndex(sides);
+var drinksIndexNum = getRandomIndex(sides);
 var mainsIndexNum = getRandomIndex(mains);
 var dessertsIndexNum = getRandomIndex(desserts);
 
 //query selectors
 var recipeName = document.querySelector('#output-name');
-var letsCookButton = document.getElementById('lets-cook-button');
-var sidesRadioButton = document.querySelector('#side-radio');
+var letsCookButton = document.getElementById('lets-eat-button');
+var drinksRadioButton = document.querySelector('#drink-radio');
 var mainsRadioButton = document.querySelector('#main-radio');
 var dessertsRadioButton = document.querySelector('#dessert-radio');
 var showHiddenContent = document.querySelector('.output-container');
@@ -85,18 +85,18 @@ function getRandomIndex(array) {
 function getRecipe(){
 if (mainsRadioButton.checked === true){
   showMain();
-  } else if (sidesRadioButton.checked === true){
-    showSide();
+  } else if (drinksRadioButton.checked === true){
+    showDrinks();
   }else if (dessertsRadioButton.checked === true){
     showDessert();
     }
   }
 
-function showSide() {
+function showDrinks() {
   sidesIndexNum = getRandomIndex(sides);
   showHiddenContent.classList.remove('hidden');
   showPot.classList.add('hidden');
-  recipeName.innerText = sides[sidesIndexNum];
+  recipeName.innerText = sides[drinksIndexNum];
 }
 
 function showMain() {
