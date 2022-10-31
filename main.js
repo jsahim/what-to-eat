@@ -1,4 +1,4 @@
-var sides = [
+var drinks = [
 "Miso Glazed Carrots",
 "Coleslaw",
 "Garden Salad",
@@ -49,7 +49,7 @@ var desserts = [
 ];
 
 
-var drinksIndexNum = getRandomIndex(sides);
+var drinksIndexNum = getRandomIndex(drinks);
 var mainsIndexNum = getRandomIndex(mains);
 var dessertsIndexNum = getRandomIndex(desserts);
 
@@ -93,10 +93,10 @@ if (mainsRadioButton.checked === true){
   }
 
 function showDrinks() {
-  sidesIndexNum = getRandomIndex(sides);
+  drinksIndexNum = getRandomIndex(drinks);
   showHiddenContent.classList.remove('hidden');
   showPot.classList.add('hidden');
-  recipeName.innerText = sides[drinksIndexNum];
+  recipeName.innerText = drinks[drinksIndexNum];
 }
 
 function showMain() {
